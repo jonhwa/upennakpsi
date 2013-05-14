@@ -1,0 +1,56 @@
+@font-face {
+	font-family: 'bebas';
+	src: url('/assets/bebas.TTF') format('truetype');
+}
+
+img{
+	display: inline-block;
+	padding-right: 20px;
+}
+
+#menu a {
+	color: #000B60;
+	font-size: 9pt;
+}
+
+#menu a:hover {
+	color: #907E4F;
+}
+
+#menu .current {
+	font-size: 9pt;
+}
+
+#pagetitle {
+	color: #000B60;
+	font-size: 26pt;
+	word-spacing: 6px;
+	font-family: 'bebas', sans-serif;
+	padding: 20px 0 0;
+	display: block;
+}
+
+#contenttitle{
+	font-size: 14pt;
+	font-family: 'bebas', sans-serif;
+	display: block;
+	word-spacing: 2px;
+}
+
+#text{
+	padding: 0;
+	display: block;
+}
+
+#text a{
+	color: #907E4F;
+}
+
+#text a:hover{
+	color: black;
+}
+
+.content{
+	padding: 0 60px 0;
+	font-size: 11pt;
+}

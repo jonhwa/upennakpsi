@@ -34,4 +34,10 @@ Upennakpsi::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  # Add fonts to asset pipeline
+  config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
+
+  # Precompile additional assets
+  config.assets.precompile += %w( .svg .eot .woff .ttf )
 end

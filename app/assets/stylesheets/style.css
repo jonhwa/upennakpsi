@@ -1,0 +1,192 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+	font-family: 'bebas';
+	src: url('bebas.TTF') format('truetype');
+}
+
+html {
+    overflow-y: scroll;
+}
+
+a:link, a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	color: #907E4F;
+}
+
+a img{
+  border:none;
+}
+
+body {
+	font-family: Georgia, Arial, sans-serif;
+	background-color: #FBFAF9;	
+}
+
+div {
+	display: block;
+}
+
+img {
+	display: inline-block;
+}
+
+#container {
+	width: 980px;
+	margin: 0 auto;
+}
+
+#header {
+	padding: 5px 0 0;
+	margin: 0 0 72px;
+	display: block;
+}
+
+#login {
+	float: right;
+	right: 0;
+	font-size: 10pt;
+}
+
+#login a {
+	color: #DCDCD5;
+	text-decoration: underline;
+}
+
+#login a:hover{
+	color: #907E4F;
+}
+
+#crestlogo {
+	height: 120px;
+	padding: 0 0 14px;
+	border-bottom: 3px solid #DCDCD5;
+}
+
+#crestlogo > a {
+	position: absolute;
+	margin-left: 290px;
+}
+
+#crestlogo > p {
+	position: relative;
+	color: #907E4F;
+	font-family: 'Libre Baskerville', Lucida Handwriting, sans-serif;
+	font-style: italic;
+	font-size: 18px;
+}
+
+#crestlogo > p > span:first-child {
+	right: auto;
+	left: 0;
+	border-width: 0 1px 0 0;
+	width: 240px;
+}
+
+#crestlogo > p > #comma {
+	position: absolute;
+	left: -9999px;
+}
+
+#crestlogo > p > span{
+	position: absolute;
+	top: 7px;
+	right: 0;
+	padding: 34px 0 0;
+	width: 240px;
+	height: 70px;
+	border: dashed #DCDCD5;
+	border-width: 0 0 0 1px;
+	text-align: center;
+}
+
+#navbar{
+	font-family: 'bebas', sans-serif;
+	letter-spacing: 2px;
+	color: black;
+	text-align: center;
+	margin: 0 1px;
+	display: block;
+}
+
+#navbar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#navbar ul.drop {
+	display: none;
+	position: absolute;
+	width: 162px;
+	z-index: 1;
+}
+
+#navbar > ul > li:hover > ul {
+	display: block;
+	padding: 14px 0 0;
+}
+
+#navbar li {
+	float: left;
+	position: relative;
+	display: block;
+	padding: 17px 0 0;
+	height: 48px;
+	width: 163px;
+	background: url('/assets/nav.png') no-repeat 0 100%;
+	z-index: 2;
+}
+#navbar > ul > li > ul.drop > #topborder {
+	border-width: 1px 1px 1px 1px;
+}
+
+#navbar > ul > li > ul.drop > li {
+	font-size: 12px;
+	height: auto;
+	width: 162px;
+	padding: 10px 0 10px;
+	background: rgba(251,250,249,0.95);
+	border: solid #DCDCD5;
+	border-width: 0px 1px 1px 1px;
+	vertical-align: center;
+	z-index: 1;
+}
+
+#frat #ourFrat > a, #index #home > a, #bros #ourBros > a, #whatwedo #what > a, 
+#rushus #rush > a, #contactus #contact > a{
+	color: #907E4F;
+}
+
+#frat #home, #bros #home, #whatwedo #home, #rushus #home, #contactus #home, #brotherlogin #home{
+	background-position: -1px;
+}
+
+#frat #ourFrat, #bros #ourBros, #whatwedo #what, #rushus #rush, #contactus #contact{
+	background-position: -164px 100%;
+}
+
+#index #home {
+	background-position: -165px 100%;
+}
+
+
+#footer span{
+	font-size: 10pt;
+	float: right;
+	right: 0;
+	color: #907E4F;
+}
+
+#footer{
+	height: 20px;
+	float: left;
+	display: block;
+	width: 100%;
+	padding: 40px 0 0;
+}
