@@ -13,3 +13,13 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+$(document).ready(function(){
+	$('.slideshow').cycle({
+		fx: 'fade',
+		speed: '2500',
+		timeout: '5000',
+		next: '#next2',
+		prev: '#prev2'
+	});
+});

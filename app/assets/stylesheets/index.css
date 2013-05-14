@@ -1,0 +1,175 @@
+@font-face {
+	font-family: bebas;
+	src: url('fonts/Bebas.ttf') format('opentype');
+}
+
+.imagetxt{
+	width: 690px;
+	height: auto;
+	background: rgba(0,0,0,0.80);
+	color: white;
+	position: absolute;
+	bottom: 0px;
+}
+
+.imagetxt p{
+	margin: 5px 15px 10px;
+	font-size: 11pt;
+}
+
+.imagetxt h3{
+	font-weight: normal;
+	font-size: 16pt;
+	margin: 10px 15px 0px;
+	padding: 0 0 2px;
+	border: dotted;
+	border-width: 0 0 1px 0;
+}
+
+.imagetxt a, #news a{
+	color: #907E4F;
+}
+
+#imgslide{
+	z-index: 0;
+	padding: 30px 145px 0;
+	display: block;
+	width: auto;
+	height: auto;
+	float: left;
+}
+
+.slideshow{
+	z-index: 0;
+}
+
+.arrow a {
+	color: white !important;
+	font-size: 54pt;
+}
+
+.arrow {
+	background: rgba(0, 0, 0, 0.8);
+	width: 100px;
+	height: 100px;
+}
+
+#prev{
+	left: 0;
+	float: left;
+}
+
+#next{
+	right: 0;
+	float: right;
+}
+
+#prev, #next{
+	display: inline;
+	position: absolute;
+	margin: 200px 0 0;
+}
+
+#prev2, #next2 {
+	position: absolute;
+	padding: 5px 27px 0px;
+}
+
+#news, #featured{
+	padding: 20px 145px 0;
+	display: block;
+	float: left;
+}
+
+#events{
+	width: 339px;
+	height: 260px;
+	float: left;
+	left: 0;
+	border: dashed #DCDCD5;
+	border-width: 0 1px 0 0;
+}
+
+#rushus{
+	width: 340px;
+	float: right;
+	right: 0;
+	padding: 0 0 0 10px;
+}
+
+.title{
+	font-family: bebas, sans-serif;
+	color: #000B60;
+	font-size: 18pt;
+	word-spacing: 3px;
+}
+
+#news p{
+	font-size: 11pt;
+}
+
+#newswrapper{
+	width: 690px;
+	float: left;
+	border: solid #DCDCD5;
+	border-width: 0 0 2px 0;
+	padding: 0 0 10px;
+}
+
+#featured{
+	font-size: 11pt;
+}
+
+#featured .title{
+	color: #907E4F;
+}
+
+#featuredcontent{
+	padding: 20px 0 0;
+}
+
+#image, #info, #moreinfo{
+	float: left;
+	display: inline-block;
+}
+
+#info{
+	padding: 0 10px 0;
+	width: 260px;
+	border: dashed #DCDCD5;
+	border-width: 0 1px 0 0; 
+}
+
+#moreinfo{
+	padding: 0 10px 0;
+	width: 254px;
+}
+
+#moreinfo p{
+	margin-top: 0;
+}
+
+#moreinfo span{
+	display: block;
+}
+
+#featuredcontent .title{
+	color: #000B60;
+	font-size: 14pt;
+	display: block;
+}
+
+#featuredcontent .infotitle{
+	color: #000B60;
+	font-weight: bold;
+}
+
+#featuredcontent .element{
+	display:block;
+}
+
+#featured a{
+	float: right;
+	right: 0;
+	color: #907E4F;
+}
