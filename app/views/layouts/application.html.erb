@@ -27,11 +27,11 @@
 
             <nav id="navbar">
                 <ul>
-                    <li id="home"><a href="index.php">Home</a></li>
-                    <li id="ourFrat"><a href="page.php?page=about-akpsi">Our Fraternity</a>
+                    <li id="home"><%= link_to 'Home', '/' %></li>
+                    <li id="ourFrat"><%= link_to 'Our Fraternity', '/about-epsilon-rho' %>
                         <ul class="drop">
-                            <li id="topborder"><a href="page.php?page=about-akpsi">About Epsilon Rho</a></li>
-                            <li><a href="page.php?page=history">Our History</a></li>
+                            <li id="topborder"><%= link_to 'About Epsilon Rho', '/about-epsilon-rho' %></li>
+                            <li><%= link_to 'Our History', '/our-history' %></li>
                             <li><a href="page.php?page=exec-board">Executive Board</a></li>
                         </ul>
                     </li>
@@ -71,16 +71,12 @@
         </section>
 
         <!-- Page content -->
-        <section class="content">
-            <span id="pagetitle"><%= page_title %></span>
-            <div id="text">
-                <%=raw @page.content_for(:body) %>
-            </div>
-
-            <div id="footer">
-                <span>&copy; Alpha Kappa Psi 2013 | Jonathan Hwa &amp; Connie Yuan</span>
-            </div>
-        </section>
+        <%= yield %>
+        
+        <!-- Footer -->
+        <div id="footer">
+            <span>&copy; Alpha Kappa Psi 2013 | Jonathan Hwa &amp; Connie Yuan</span>
+        </div>
     </div>
 </body>
 </html>
