@@ -1,8 +1,3 @@
-@font-face {
-	font-family: 'bebas';
-	src: url('/assets/bebas.TTF') format('truetype');
-}
-
 img{
 	display: inline-block;
 	padding-right: 20px;

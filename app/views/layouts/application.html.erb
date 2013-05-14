@@ -27,42 +27,8 @@
                 </p>
             </div>
 
-            <nav id="navbar">
-                <ul>
-                    <li id="home"><%= link_to 'Home', '/' %></li>
-                    <li id="ourFrat"><%= link_to 'Our Fraternity', '/about-epsilon-rho' %>
-                        <ul class="drop">
-                            <li id="topborder"><%= link_to 'About Epsilon Rho', '/about-epsilon-rho' %></li>
-                            <li><%= link_to 'Our History', '/our-history' %></li>
-                            <li><a href="page.php?page=exec-board">Executive Board</a></li>
-                        </ul>
-                    </li>
-                    <li id="ourBros"><a href="brothers.php?page=current">Our Brothers</a>
-                        <ul class="drop">
-                            <li id="topborder"><a href="brothers.php?page=current">Current Brothers</a></li>
-                            <li><a href="brothers.php?page=alumni">Alumni</a></li>
-                        </ul>
-                    </li>
-                    <li id="what"><a href="page.php?page=me-week">What We Do</a>
-                        <ul class="drop">
-                            <li id="topborder"><a href="page.php?page=me-week">Media & Entertainment Week</a></li>
-                            <li><a href="page.php?page=aspire-to-excellence">Aspire to Excellence</a></li>
-                            <li><a href="page.php?page=community-service">Community Service</a></li>
-                            <li><a href="page.php?page=business-services">Business Services</a></li>
-                            <li><a href="page.php?page=internal-professional">Internal <br>Professional</a></li>
-                        </ul>
-                    </li>
-                    <li id="rush"><a href="page.php?page=rush-welcome">Rush Us</a>
-                        <ul class="drop">
-                            <li id="topborder"><a href="page.php?page=rush-welcome">Welcome</a></li>
-                            <li><a href="page.php?page=rush-events">Events</a></li>
-                            <li><a href="page.php?page=rush-faq">FAQ</a></li>
-                            <li><a href="page.php?page=rush-application">Application</a></li>
-                        </ul>
-                    </li>
-                    <li id="contact"><a href="contactus.php">Contact Us</a></li>
-                </ul>
-            </nav>
+            <!-- Navigation menu -->
+            <%= render :partial => '/refinery/menu' %>
         </header>
 
         <!-- Breadcrumbs, only if NOT home page -->

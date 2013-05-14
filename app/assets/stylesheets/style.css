@@ -1,11 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
 
-@font-face {
-	font-family: 'bebas';
-	src: url('bebas.TTF') format('truetype');
-}
-
 html {
     overflow-y: scroll;
 }
@@ -105,7 +100,7 @@ img {
 	text-align: center;
 }
 
-#navbar{
+#navbar {
 	font-family: 'bebas', sans-serif;
 	letter-spacing: 2px;
 	color: black;
@@ -120,11 +115,19 @@ img {
 	list-style: none;
 }
 
+#navbar ul > .first {
+	background-position: -1px;
+}
+
 #navbar ul.drop {
 	display: none;
 	position: absolute;
 	width: 162px;
 	z-index: 1;
+}
+
+#navbar ul.drop > .first {
+	border-width: 1px 1px 1px 1px;
 }
 
 #navbar > ul > li:hover > ul {
@@ -142,9 +145,6 @@ img {
 	background: url('/assets/nav.png') no-repeat 0 100%;
 	z-index: 2;
 }
-#navbar > ul > li > ul.drop > #topborder {
-	border-width: 1px 1px 1px 1px;
-}
 
 #navbar > ul > li > ul.drop > li {
 	font-size: 12px;
@@ -158,23 +158,17 @@ img {
 	z-index: 1;
 }
 
-#frat #ourFrat > a, #index #home > a, #bros #ourBros > a, #whatwedo #what > a, 
-#rushus #rush > a, #contactus #contact > a{
-	color: #907E4F;
-}
-
-#frat #home, #bros #home, #whatwedo #home, #rushus #home, #contactus #home, #brotherlogin #home{
-	background-position: -1px;
-}
-
-#frat #ourFrat, #bros #ourBros, #whatwedo #what, #rushus #rush, #contactus #contact{
+#navbar .selected {
 	background-position: -164px 100%;
 }
 
-#index #home {
-	background-position: -165px 100%;
+#navbar .selected > a {
+	color: #907E4F;
 }
 
+#navbar .selected.first {
+	background-position: -165px 100%;
+}
 
 #footer span{
 	font-size: 10pt;

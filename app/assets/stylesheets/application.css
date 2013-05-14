@@ -11,3 +11,8 @@
  *= require_self
  *= require_tree .
  */
+
+@font-face {
+	font-family: 'bebas';
+	src: url('/assets/bebas.TTF') format('truetype');
+}
