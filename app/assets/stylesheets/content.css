@@ -30,11 +30,20 @@ img{
 	display: block;
 }
 
-#contenttitle{
+h1, h2, h3 {
 	font-size: 14pt;
+	font-weight: normal;
 	font-family: 'bebas', sans-serif;
 	display: block;
 	word-spacing: 2px;
+}
+
+h1 {
+	font-size: 22pt;
+}
+
+h2 {
+	font-size: 18pt;
 }
 
 #text{
