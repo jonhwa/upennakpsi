@@ -35,7 +35,7 @@
         <% unless current_page?('/') %>
             <section id="menu" class="content">
                 <%= link_to 'Alpha Kappa Psi', '/' %> &#187; 
-                <%= link_to @page.root.title, @page.root.url %> &#187;
+                <%= link_to refinery.@page.root.title, refinery.@page.root.url %> &#187;
                 <span class="current"><%= page_title %></span>
             </section>
         <% end %>
