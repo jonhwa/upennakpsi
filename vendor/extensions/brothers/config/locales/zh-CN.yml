@@ -1,0 +1,31 @@
+zh-CN:
+  refinery:
+    plugins:
+      brothers:
+        title: Brothers
+    brothers:
+      admin:
+        brothers:
+          actions:
+            create_new: 建立新的 Brother
+            reorder: 对 Brothers 重新排序
+            reorder_done: 对 Brothers 的重新排序结束
+          records:
+            title: Brothers
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Brothers yet. Click "Add New Brother" to add your first brother.
+            no_items_yet: 目前没有 Brothers . 点击 "Add New Brother" 创建一个brother.
+          brother:
+            view_live_html: 查看 brother 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 brother
+            delete: 永久删除 brother
+      brothers:
+        show:
+          other: 其他 Brothers
+  activerecord:
+    attributes:
+      'refinery/brothers/brother':
+        first_name: First Name
+        last_name: Last Name
+        photo: Photo

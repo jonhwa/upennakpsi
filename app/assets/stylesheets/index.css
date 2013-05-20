@@ -1,4 +1,4 @@
-.imagetxt{
+.imagetxt {
 	width: 690px;
 	height: auto;
 	background: rgba(0,0,0,0.80);
@@ -7,12 +7,12 @@
 	bottom: 0px;
 }
 
-.imagetxt p{
+.imagetxt p {
 	margin: 5px 15px 10px;
 	font-size: 11pt;
 }
 
-.imagetxt h3{
+.imagetxt h3 {
 	font-weight: normal;
 	font-size: 16pt;
 	margin: 10px 15px 0px;
@@ -21,11 +21,15 @@
 	border-width: 0 0 1px 0;
 }
 
-.imagetxt a, #news a{
-	color: #907E4F;
+.imagetxt a, #news a {
+	color: #907E4F !important;
 }
 
-#imgslide{
+.imagetxt a:hover {
+	color: white !important;
+}
+
+#imgslide {
 	z-index: 0;
 	padding: 30px 145px 0;
 	display: block;
@@ -34,7 +38,7 @@
 	float: left;
 }
 
-.slideshow{
+.slideshow {
 	z-index: 0;
 }
 

@@ -1,0 +1,29 @@
+nb:
+  refinery:
+    plugins:
+      brothers:
+        title: Brothers
+    brothers:
+      admin:
+        brothers:
+          actions:
+            create_new: Lag en ny Brother
+            reorder: Endre rekkefølgen på Brothers
+            reorder_done: Ferdig å endre rekkefølgen Brothers
+          records:
+            title: Brothers
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Brothers enda. Klikk på "Lag en ny Brother" for å legge til din første brother.
+          brother:
+            view_live_html: Vis hvordan denne brother ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne brother
+            delete: Fjern denne brother permanent
+      brothers:
+        show:
+          other: Andre Brothers
+  activerecord:
+    attributes:
+      'refinery/brothers/brother':
+        first_name: First Name
+        last_name: Last Name
+        photo: Photo

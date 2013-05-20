@@ -1,0 +1,29 @@
+fr:
+  refinery:
+    plugins:
+      brothers:
+        title: Brothers
+    brothers:
+      admin:
+        brothers:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Brother
+            reorder: Réordonner les Brothers
+            reorder_done: Fin de réordonnancement des Brothers
+          records:
+            title: Brothers
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Brother. Cliquer sur "Créer un(e) nouve(au/l/lle) Brother" pour créer votre premi(er/ère) brother.'
+          brother:
+            view_live_html: Voir ce(t/tte) brother <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) brother
+            delete: Supprimer définitivement ce(t/tte) brother
+      brothers:
+        show:
+          other: Autres Brothers
+  activerecord:
+    attributes:
+      'refinery/brothers/brother':
+        first_name: First Name
+        last_name: Last Name
+        photo: Photo

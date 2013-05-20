@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="pledge_classes">
+    <% @pledge_classes.each do |pledge_class| %>
+      <li>
+        <%= link_to pledge_class.name, refinery.pledge_classes_pledge_class_path(pledge_class) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

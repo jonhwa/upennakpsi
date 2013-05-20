@@ -1,0 +1,27 @@
+nl:
+  refinery:
+    plugins:
+      pledge_classes:
+        title: Pledge Classes
+    pledge_classes:
+      admin:
+        pledge_classes:
+          actions:
+            create_new: Maak een nieuwe Pledge Class
+            reorder: Wijzig de volgorde van de Pledge Classes
+            reorder_done: Klaar met het wijzingen van de volgorde van de Pledge Classes
+          records:
+            title: Pledge Classes
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Pledge Classes. Druk op 'Maak een nieuwe Pledge Class' om de eerste aan te maken.
+          pledge_class:
+            view_live_html: Bekijk deze pledge class op de website <br/><em>(opent een nieuw venster)</em>
+            edit: Bewerk deze pledge class
+            delete: Verwijder deze pledge class voor eeuwig
+      pledge_classes:
+        show:
+          other: Andere Pledge Classes
+  activerecord:
+    attributes:
+      'refinery/pledge_classes/pledge_class':
+        name: Name

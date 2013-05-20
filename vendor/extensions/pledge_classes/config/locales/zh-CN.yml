@@ -1,0 +1,29 @@
+zh-CN:
+  refinery:
+    plugins:
+      pledge_classes:
+        title: Pledge Classes
+    pledge_classes:
+      admin:
+        pledge_classes:
+          actions:
+            create_new: 建立新的 Pledge Class
+            reorder: 对 Pledge Classes 重新排序
+            reorder_done: 对 Pledge Classes 的重新排序结束
+          records:
+            title: Pledge Classes
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Pledge Classes yet. Click "Add New Pledge Class" to add your first pledge class.
+            no_items_yet: 目前没有 Pledge Classes . 点击 "Add New Pledge Class" 创建一个pledge class.
+          pledge_class:
+            view_live_html: 查看 pledge class 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 pledge class
+            delete: 永久删除 pledge class
+      pledge_classes:
+        show:
+          other: 其他 Pledge Classes
+  activerecord:
+    attributes:
+      'refinery/pledge_classes/pledge_class':
+        name: Name

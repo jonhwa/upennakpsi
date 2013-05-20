@@ -34,9 +34,9 @@
         <!-- Breadcrumbs, only if NOT home page -->
         <% unless current_page?('/') %>
             <section id="menu" class="content">
-                <a href="index.php">Alpha Kappa Psi</a> &#187; 
-                <a href="page.php?page=about-akpsi">Our Fraternity</a> &#187;
-                <span class="current">About Epsilon Rho</span>
+                <%= link_to 'Alpha Kappa Psi', '/' %> &#187; 
+                <%= link_to @page.root.title, @page.root.url %> &#187;
+                <span class="current"><%= page_title %></span>
             </section>
         <% end %>
 

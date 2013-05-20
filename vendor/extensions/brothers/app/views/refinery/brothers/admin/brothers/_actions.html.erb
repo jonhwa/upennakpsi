@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::Brothers::Admin::BrothersController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.brothers_admin_brothers_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_brothers_admin_brother_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::Brothers::Admin::BrothersController.sortable? && ::Refinery::Brothers::Brother.any? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Brothers"),
+                 refinery.brothers_admin_brothers_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Brothers"),
+                 refinery.brothers_admin_brothers_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

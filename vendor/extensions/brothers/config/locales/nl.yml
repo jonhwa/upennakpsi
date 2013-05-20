@@ -1,0 +1,29 @@
+nl:
+  refinery:
+    plugins:
+      brothers:
+        title: Brothers
+    brothers:
+      admin:
+        brothers:
+          actions:
+            create_new: Maak een nieuwe Brother
+            reorder: Wijzig de volgorde van de Brothers
+            reorder_done: Klaar met het wijzingen van de volgorde van de Brothers
+          records:
+            title: Brothers
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Brothers. Druk op 'Maak een nieuwe Brother' om de eerste aan te maken.
+          brother:
+            view_live_html: Bekijk deze brother op de website <br/><em>(opent een nieuw venster)</em>
+            edit: Bewerk deze brother
+            delete: Verwijder deze brother voor eeuwig
+      brothers:
+        show:
+          other: Andere Brothers
+  activerecord:
+    attributes:
+      'refinery/brothers/brother':
+        first_name: First Name
+        last_name: Last Name
+        photo: Photo

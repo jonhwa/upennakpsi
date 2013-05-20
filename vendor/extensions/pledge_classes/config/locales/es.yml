@@ -1,0 +1,28 @@
+es:
+  refinery:
+    plugins:
+      pledge_classes:
+        title: Pledge Classes
+#        article: masculino/femenino
+    pledge_classes:
+      admin:
+        pledge_classes:
+          actions:
+            create_new: Crear nuevo pledge class
+            reorder: Reordenar pledge classes
+            reorder_done: Reordenación de pledge classes completada
+          records:
+            title: Pledge Classes
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay pledge classes todavía. Pulsa en "Crear nuevo Pledge Class" para crear tu primer pledge class.
+          pledge_class:
+            view_live_html: Ver este pledge class como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este pledge class
+            delete: Borrar este pledge class para siempre
+      pledge_classes:
+        show:
+          other: Otros pledge classes
+  activerecord:
+    attributes:
+      'refinery/pledge_classes/pledge_class':
+        name: Name

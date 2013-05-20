@@ -1,0 +1,27 @@
+<% content_for :body_content_title do %>
+  <%= @pledge_class.name %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>Name</h1>
+    <p>
+      <%=raw @pledge_class.name %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="pledge_classes">
+      <% @pledge_classes.each do |pledge_class| %>
+        <li>
+          <%= link_to pledge_class.name, refinery.pledge_classes_pledge_class_path(pledge_class) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

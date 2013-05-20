@@ -1,0 +1,29 @@
+en:
+  refinery:
+    plugins:
+      brothers:
+        title: Brothers
+    brothers:
+      admin:
+        brothers:
+          actions:
+            create_new: Add New Brother
+            reorder: Reorder Brothers
+            reorder_done: Done Reordering Brothers
+          records:
+            title: Brothers
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Brothers yet. Click "Add New Brother" to add your first brother.
+          brother:
+            view_live_html: View this brother live <br/><em>(opens in a new window)</em>
+            edit: Edit this brother
+            delete: Remove this brother forever
+      brothers:
+        show:
+          other: Other Brothers
+  activerecord:
+    attributes:
+      'refinery/brothers/brother':
+        first_name: First Name
+        last_name: Last Name
+        photo: Photo

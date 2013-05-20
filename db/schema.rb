@@ -11,7 +11,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130514170249) do
+ActiveRecord::Schema.define(:version => 20130515020320) do
+
+  create_table "refinery_brothers", :force => true do |t|
+    t.string   "first_name"
+    t.string   "last_name"
+    t.integer  "photo_id"
+    t.integer  "position"
+    t.integer  "pledge_class_id"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+  end
+
+  add_index "refinery_brothers", ["pledge_class_id"], :name => "index_refinery_brothers_on_pledge_class_id"
 
   create_table "refinery_images", :force => true do |t|
     t.string   "image_mime_type"
@@ -86,6 +98,13 @@ ActiveRecord::Schema.define(:version => 20130514170249) do
   add_index "refinery_pages", ["lft"], :name => "index_refinery_pages_on_lft"
   add_index "refinery_pages", ["parent_id"], :name => "index_refinery_pages_on_parent_id"
   add_index "refinery_pages", ["rgt"], :name => "index_refinery_pages_on_rgt"
+
+  create_table "refinery_pledge_classes", :force => true do |t|
+    t.string   "name"
+    t.integer  "position"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "refinery_resources", :force => true do |t|
     t.string   "file_mime_type"

@@ -1,0 +1,27 @@
+en:
+  refinery:
+    plugins:
+      pledge_classes:
+        title: Pledge Classes
+    pledge_classes:
+      admin:
+        pledge_classes:
+          actions:
+            create_new: Add New Pledge Class
+            reorder: Reorder Pledge Classes
+            reorder_done: Done Reordering Pledge Classes
+          records:
+            title: Pledge Classes
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Pledge Classes yet. Click "Add New Pledge Class" to add your first pledge class.
+          pledge_class:
+            view_live_html: View this pledge class live <br/><em>(opens in a new window)</em>
+            edit: Edit this pledge class
+            delete: Remove this pledge class forever
+      pledge_classes:
+        show:
+          other: Other Pledge Classes
+  activerecord:
+    attributes:
+      'refinery/pledge_classes/pledge_class':
+        name: Name

@@ -1,0 +1,30 @@
+es:
+  refinery:
+    plugins:
+      brothers:
+        title: Brothers
+#        article: masculino/femenino
+    brothers:
+      admin:
+        brothers:
+          actions:
+            create_new: Crear nuevo brother
+            reorder: Reordenar brothers
+            reorder_done: Reordenación de brothers completada
+          records:
+            title: Brothers
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay brothers todavía. Pulsa en "Crear nuevo Brother" para crear tu primer brother.
+          brother:
+            view_live_html: Ver este brother como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este brother
+            delete: Borrar este brother para siempre
+      brothers:
+        show:
+          other: Otros brothers
+  activerecord:
+    attributes:
+      'refinery/brothers/brother':
+        first_name: First Name
+        last_name: Last Name
+        photo: Photo

@@ -8,3 +8,9 @@
 
 # Added by Refinery CMS Pages extension
 Refinery::Pages::Engine.load_seed
+
+# Added by Refinery CMS Pledge Classes extension
+Refinery::PledgeClasses::Engine.load_seed
+
+# Added by Refinery CMS Brothers extension
+Refinery::Brothers::Engine.load_seed

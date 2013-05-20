@@ -1,0 +1,27 @@
+nb:
+  refinery:
+    plugins:
+      pledge_classes:
+        title: Pledge Classes
+    pledge_classes:
+      admin:
+        pledge_classes:
+          actions:
+            create_new: Lag en ny Pledge Class
+            reorder: Endre rekkefølgen på Pledge Classes
+            reorder_done: Ferdig å endre rekkefølgen Pledge Classes
+          records:
+            title: Pledge Classes
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Pledge Classes enda. Klikk på "Lag en ny Pledge Class" for å legge til din første pledge class.
+          pledge_class:
+            view_live_html: Vis hvordan denne pledge class ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne pledge class
+            delete: Fjern denne pledge class permanent
+      pledge_classes:
+        show:
+          other: Andre Pledge Classes
+  activerecord:
+    attributes:
+      'refinery/pledge_classes/pledge_class':
+        name: Name
